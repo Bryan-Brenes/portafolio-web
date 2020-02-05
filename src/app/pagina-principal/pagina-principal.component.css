@@ -1,6 +1,6 @@
 .contenedor-app {
     background-color: #343a40;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .titulo {
@@ -10,9 +10,8 @@
 }
 
 .contenedor-proyectos {
-    display: flex;
-    padding: 2em;
-    margin: 0 10vw;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .contenedor-proyecto-link {
@@ -20,7 +19,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 33.33%;
+    width: 100%;
     padding: 1em;
     margin: 1em;
     text-align: center;
