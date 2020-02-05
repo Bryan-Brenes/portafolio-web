@@ -1,0 +1,54 @@
+.contenedor-app {
+    background-color: #343a40;
+    height: 100vh;
+}
+
+.titulo {
+    text-align: center;
+    color: #f2f2f2;
+    padding-top: 4vh;
+}
+
+.contenedor-proyectos {
+    display: flex;
+    padding: 2em;
+    margin: 0 10vw;
+}
+
+.contenedor-proyecto-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 33.33%;
+    padding: 1em;
+    margin: 1em;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: -2px -2px 3px rgba(255, 255, 255, 0.05), 2px 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+.botones {
+    padding: 0 1em;
+}
+
+.proyecto {
+    display: inline-block;
+    color: #e7e7e7;
+    margin-bottom: 1em;
+}
+
+.btn-primario {
+    color: rgb(226, 226, 226);
+    display: inline-block;
+    padding: 0.7em;
+    border-radius: 8px;
+    background-color: #39afd1;
+    box-shadow: 0 0 10px #39afd1;
+    margin: 5px;
+}
+
+.btn-primario:hover {
+    background-color: #2e869e;
+    box-shadow: 0 0 10px #2e869e;
+}

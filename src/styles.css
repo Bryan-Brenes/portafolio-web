@@ -1,1 +1,41 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import './assets/bootstrap-grid.min.css';
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+.contenedor {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.centrar-texto {
+    text-align: center;
+}
+
+h1 {
+    padding: 2vh 0;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-center-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.total-width {
+    width: 100%;
+}
