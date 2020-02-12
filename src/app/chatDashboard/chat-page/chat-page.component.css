@@ -88,6 +88,10 @@
     background-color: #f2f2fd;
 }
 
+.menu-items {
+    margin-top: 20px;
+}
+
 @media (min-width: 765px) {
     .side-menu {
         transform: translateX(0px);

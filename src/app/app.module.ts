@@ -7,6 +7,7 @@ import { NeumorphismDribbbleComponent } from './neumorphism-dribbble/neumorphism
 import { PaginaPrincipalComponent } from './pagina-principal/pagina-principal.component';
 import { NeumorphicUiElementsComponent } from './neumorphic-ui-elements/neumorphic-ui-elements.component';
 import { ChatPageComponent } from './chatDashboard/chat-page/chat-page.component';
+import { MenuItemComponent } from './chatDashboard/menu-item/menu-item.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ChatPageComponent } from './chatDashboard/chat-page/chat-page.component
     NeumorphismDribbbleComponent,
     PaginaPrincipalComponent,
     NeumorphicUiElementsComponent,
-    ChatPageComponent
+    ChatPageComponent,
+    MenuItemComponent
   ],
   imports: [
     BrowserModule,
