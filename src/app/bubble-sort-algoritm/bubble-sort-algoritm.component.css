@@ -1,0 +1,116 @@
+h1 {
+  text-align: center;
+  background-color: #2980b9;
+  color: #ecf0f1;
+}
+
+.background {
+  background-color: #ebecf0 !important;
+  z-index: -4;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 70vh;
+}
+
+.header {
+}
+
+.formulario {
+  text-align: center;
+  margin: 40px;
+  /*position: absolute;*/
+  /*right: 20px;*/
+  /*bottom: 0px;*/
+  /*max-height: 76px;*/
+  /*height: 76px;*/
+  /*line-height: 76px;*/
+}
+
+.numero-input {
+  border: none;
+  background-color: #ebecf0;
+  /* ebecf0 */
+  font-size: 0.9em;
+  margin: 0 10px;
+  padding: 0.9em;
+  font-weight: bold;
+  width: 150px;
+  border-radius: 25px;
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2),
+    inset -2px -2px 5px rgba(255, 255, 255, 0.8);
+}
+
+.contenedor-input{
+  position: relative;
+  display: inline;
+}
+
+label{
+  pointer-events: none;
+}
+
+.input-label-cantidad{
+  position: absolute;
+  top: 0px;
+  left: 20px;
+  font-size: 0.9em;
+  color: #7f8c8d;
+}
+
+.input-label-velocidad{
+  position: absolute;
+  top: 0px;
+  right: 45px;
+  font-size: 0.9em;
+  color: #7f8c8d;
+}
+input.cantidad-input {
+  text-align: left;
+  padding-left: 90px !important;
+  width: 160px;
+}
+
+.velocidad-input {
+  text-align: left;
+  padding-left: 20px !important;
+  width: 120px;
+}
+
+.numero-input:focus {
+  outline: none;
+}
+button {
+  border: none;
+  background-color: #1abc9c;
+  color: #ecf0f1;
+  /* ebecf0 */
+  /* ebecf0 */
+  padding: 1em;
+  margin: 0 10px;
+  border-radius: 25px;
+  font-size: 1em;
+  /* width: 100%; */
+  cursor: pointer;
+  font-weight: bold;
+  line-height: 1em;
+  box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.1),
+    5px 5px 12px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+button:hover {
+  background-color: #16a085;
+}
+
+input:focus,
+button:focus {
+  outline: none;
+}
