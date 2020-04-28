@@ -12,7 +12,7 @@ export class BubbleSortAlgoritmComponent implements OnInit {
   private canvas: any;
   private ctx: any;
   public cantidadNumeros: number = 100;
-  private numbers: number[];
+  public numbers: number[];
   private indiceActual: number = 0;
   private indiceOrdenado: number;
   private cambio: boolean;
