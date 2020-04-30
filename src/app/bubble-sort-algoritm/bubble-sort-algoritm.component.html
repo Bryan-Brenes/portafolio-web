@@ -3,39 +3,43 @@
   <h1>Bubble Sort</h1>
 </div>
 <div class="formulario">
-  <div class="contenedor-input">
-    <label class="input-label-cantidad" for="cantidad">Cantidad:</label>
-    <input
-      name="cantidad"
-      class="numero-input cantidad-input"
-      type="number"
-      min="10"
-      max="1000"
-      [(ngModel)]="cantidadNumeros"
-    />
+  <div class="contenedores-input">
+    <div class="contenedor-input">
+      <label class="input-label-cantidad" for="cantidad">Cantidad:</label>
+      <input
+        name="cantidad"
+        class="numero-input cantidad-input"
+        type="number"
+        min="10"
+        max="1000"
+        [(ngModel)]="cantidadNumeros"
+      />
+    </div>
+    <div class="contenedor-input">
+      <label class="input-label-velocidad" for="velocidad">ms</label>
+      <input
+        name="velocidad"
+        class="numero-input velocidad-input"
+        type="number"
+        min="1"
+        max="2000"
+        [(ngModel)]="intervalo"
+      />
+    </div>
   </div>
-  <div class="contenedor-input">
-    <label class="input-label-velocidad" for="velocidad">ms</label>
-    <input
-      name="velocidad"
-      class="numero-input velocidad-input"
-      type="number"
-      min="1"
-      max="2000"
-      [(ngModel)]="intervalo"
-    />
+  <div class="contenedores-input">
+    <button class="generateButton" type="button" (click)="generateNumbers()">
+      Generar
+    </button>
+    <button
+      class="sortButton"
+      type="button"
+      (click)="ordenar()"
+      [disabled]="numbers.length == 0"
+    >
+      Ordenar
+    </button>
   </div>
-  <button class="generateButton" type="button" (click)="generateNumbers()">
-    Generar
-  </button>
-  <button
-    class="sortButton"
-    type="button"
-    (click)="ordenar()"
-    [disabled]="numbers.length == 0"
-  >
-    Ordenar
-  </button>
 </div>
 <div class="contenedor">
   <canvas id="canvas" width="1000" height="500" #canvas></canvas>

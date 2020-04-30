@@ -34,13 +34,17 @@ export class BubbleSortAlgoritmComponent implements OnInit {
   initiateCanvas() {
     this.canvas = document.getElementById("canvas");
     this.ctx = this.canvas.getContext("2d");
+    this.ctx.canvas.width = window.innerWidth * 0.8;
+    this.ctx.canvas.height = window.innerHeight * 0.5;
+    console.log(window.innerWidth);
+    console.log(this.ctx.canvas.width);
   }
 
   generateNumbers() {
     try {
       this.subscription.unsubscribe();
     } catch (e) {
-      console.log(e);
+      console.log("No hay nada para unsubscribe");
     }
     this.numbers = [];
     for (let i = 0; i < this.cantidadNumeros; i++) {
